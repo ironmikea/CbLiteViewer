@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ImageFileViewer">
+            <connections>
+                <outlet property="imageView" destination="eAE-xg-4rg" id="ldc-9g-yHY"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="ImageViewController" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAE-xg-4rg">
+                    <rect key="frame" x="20" y="54" width="163" height="165"/>
+                    <imageCell key="cell" controlSize="small" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0sU-6E-w8M"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-Xx-KTA">
+                    <rect key="frame" x="14" y="6" width="75" height="32"/>
+                    <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PyU-z7-aVu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeBtnPressed:" target="-2" id="ROf-Gd-Mab"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eAE-xg-4rg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="Oee-tv-4mn"/>
+                <constraint firstItem="eAE-xg-4rg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="WkN-ib-ixS"/>
+                <constraint firstItem="eAE-xg-4rg" firstAttribute="leading" secondItem="A1d-Xx-KTA" secondAttribute="leading" id="XW5-GF-BHL"/>
+                <constraint firstAttribute="trailing" secondItem="eAE-xg-4rg" secondAttribute="trailing" constant="20" symbolic="YES" id="l4f-7E-ucH"/>
+                <constraint firstAttribute="bottom" secondItem="A1d-Xx-KTA" secondAttribute="bottom" constant="13" id="zHp-5m-LAh"/>
+                <constraint firstItem="A1d-Xx-KTA" firstAttribute="top" secondItem="eAE-xg-4rg" secondAttribute="bottom" constant="20" symbolic="YES" id="zw0-7i-zRw"/>
+            </constraints>
+            <point key="canvasLocation" x="-53.5" y="106.5"/>
+        </customView>
+    </objects>
+</document>

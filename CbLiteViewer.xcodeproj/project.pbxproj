@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304CF6CB2577349A007DC782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CF6CA2577349A007DC782 /* AppDelegate.m */; };
+		304CF6D12577349A007DC782 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CF6D02577349A007DC782 /* Document.m */; };
+		304CF6D3257734B0007DC782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304CF6D2257734B0007DC782 /* Assets.xcassets */; };
+		304CF6D9257734B1007DC782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CF6D8257734B1007DC782 /* main.m */; };
+		304CF6E825774A89007DC782 /* DBDoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 304CF6E725774A89007DC782 /* DBDoc.icns */; };
+		306C33392592F82C008B3AB0 /* ImageFileViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 306C33372592F82B008B3AB0 /* ImageFileViewer.m */; };
+		306C333A2592F82C008B3AB0 /* ImageFileViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306C33382592F82B008B3AB0 /* ImageFileViewer.xib */; };
+		30803B4725A586690007676C /* CBLBlob+copyZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 30803B4625A586680007676C /* CBLBlob+copyZone.m */; };
+		30803B4925A58ED60007676C /* image-not-available.png in Resources */ = {isa = PBXBuildFile; fileRef = 30803B4825A58ED60007676C /* image-not-available.png */; };
+		30A6DB862580914500871014 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A6DB852580914500871014 /* MainMenu.xib */; };
+		30A6DB8A2580963300871014 /* CBLiteDBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A6DB882580963300871014 /* CBLiteDBController.m */; };
+		30A6DB8B2580963300871014 /* CBLiteDBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A6DB892580963300871014 /* CBLiteDBController.xib */; };
+		30A7C40F2598399C00E0EDC5 /* AddViewDateViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A7C40D2598399C00E0EDC5 /* AddViewDateViewer.m */; };
+		30A7C4102598399C00E0EDC5 /* AddViewDateViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A7C40E2598399C00E0EDC5 /* AddViewDateViewer.xib */; };
+		30BB460825B6A61A000F7D36 /* CouchbaseLite.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 30BB460625B6A61A000F7D36 /* CouchbaseLite.framework.dSYM */; };
+		30BB460A25B6A8F4000F7D36 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB460725B6A61A000F7D36 /* CouchbaseLite.framework */; };
+		30BB460B25B6A8F4000F7D36 /* CouchbaseLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB460725B6A61A000F7D36 /* CouchbaseLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		304CF6E625773B29007DC782 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30BB460B25B6A8F4000F7D36 /* CouchbaseLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		304CF6C62577349A007DC782 /* CbLiteViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CbLiteViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304CF6C92577349A007DC782 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		304CF6CA2577349A007DC782 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		304CF6CF2577349A007DC782 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		304CF6D02577349A007DC782 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		304CF6D2257734B0007DC782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304CF6D7257734B1007DC782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304CF6D8257734B1007DC782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		304CF6DA257734B1007DC782 /* CbLiteViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CbLiteViewer.entitlements; sourceTree = "<group>"; };
+		304CF6E725774A89007DC782 /* DBDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DBDoc.icns; sourceTree = "<group>"; };
+		306C33362592F82B008B3AB0 /* ImageFileViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFileViewer.h; sourceTree = "<group>"; };
+		306C33372592F82B008B3AB0 /* ImageFileViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFileViewer.m; sourceTree = "<group>"; };
+		306C33382592F82B008B3AB0 /* ImageFileViewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFileViewer.xib; sourceTree = "<group>"; };
+		30803B4525A586680007676C /* CBLBlob+copyZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLBlob+copyZone.h"; sourceTree = "<group>"; };
+		30803B4625A586680007676C /* CBLBlob+copyZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLBlob+copyZone.m"; sourceTree = "<group>"; };
+		30803B4825A58ED60007676C /* image-not-available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-not-available.png"; sourceTree = "<group>"; };
+		30A6DB852580914500871014 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		30A6DB872580963300871014 /* CBLiteDBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBLiteDBController.h; sourceTree = "<group>"; };
+		30A6DB882580963300871014 /* CBLiteDBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLiteDBController.m; sourceTree = "<group>"; };
+		30A6DB892580963300871014 /* CBLiteDBController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CBLiteDBController.xib; sourceTree = "<group>"; };
+		30A7C40C2598399C00E0EDC5 /* AddViewDateViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewDateViewer.h; sourceTree = "<group>"; };
+		30A7C40D2598399C00E0EDC5 /* AddViewDateViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewDateViewer.m; sourceTree = "<group>"; };
+		30A7C40E2598399C00E0EDC5 /* AddViewDateViewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewDateViewer.xib; sourceTree = "<group>"; };
+		30A7C411259844AB00E0EDC5 /* AddViewDateViewerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewDateViewerDelegate.h; sourceTree = "<group>"; };
+		30BB460625B6A61A000F7D36 /* CouchbaseLite.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = CouchbaseLite.framework.dSYM; sourceTree = "<group>"; };
+		30BB460725B6A61A000F7D36 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304CF6C32577349A007DC782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BB460A25B6A8F4000F7D36 /* CouchbaseLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304CF6BD25773499007DC782 = {
+			isa = PBXGroup;
+			children = (
+				304CF6C82577349A007DC782 /* CbLiteViewer */,
+				304CF6C72577349A007DC782 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304CF6C72577349A007DC782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304CF6C62577349A007DC782 /* CbLiteViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304CF6C82577349A007DC782 /* CbLiteViewer */ = {
+			isa = PBXGroup;
+			children = (
+				30803B4525A586680007676C /* CBLBlob+copyZone.h */,
+				30803B4625A586680007676C /* CBLBlob+copyZone.m */,
+				30A7C411259844AB00E0EDC5 /* AddViewDateViewerDelegate.h */,
+				30A7C40C2598399C00E0EDC5 /* AddViewDateViewer.h */,
+				30A7C40D2598399C00E0EDC5 /* AddViewDateViewer.m */,
+				30A7C40E2598399C00E0EDC5 /* AddViewDateViewer.xib */,
+				304CF6C92577349A007DC782 /* AppDelegate.h */,
+				304CF6CA2577349A007DC782 /* AppDelegate.m */,
+				30A6DB872580963300871014 /* CBLiteDBController.h */,
+				30A6DB882580963300871014 /* CBLiteDBController.m */,
+				30A6DB892580963300871014 /* CBLiteDBController.xib */,
+				304CF6CF2577349A007DC782 /* Document.h */,
+				304CF6D02577349A007DC782 /* Document.m */,
+				306C33362592F82B008B3AB0 /* ImageFileViewer.h */,
+				306C33372592F82B008B3AB0 /* ImageFileViewer.m */,
+				306C33382592F82B008B3AB0 /* ImageFileViewer.xib */,
+				304CF6D2257734B0007DC782 /* Assets.xcassets */,
+				30A6DB852580914500871014 /* MainMenu.xib */,
+				304CF6D7257734B1007DC782 /* Info.plist */,
+				304CF6E725774A89007DC782 /* DBDoc.icns */,
+				304CF6D8257734B1007DC782 /* main.m */,
+				304CF6DA257734B1007DC782 /* CbLiteViewer.entitlements */,
+				30803B4825A58ED60007676C /* image-not-available.png */,
+				30BB460525B6A61A000F7D36 /* macOS */,
+			);
+			path = CbLiteViewer;
+			sourceTree = "<group>";
+		};
+		30BB460525B6A61A000F7D36 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				30BB460625B6A61A000F7D36 /* CouchbaseLite.framework.dSYM */,
+				30BB460725B6A61A000F7D36 /* CouchbaseLite.framework */,
+			);
+			name = macOS;
+			path = "../../../Documents/couchbase-lite-objc_enterprise_2/macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304CF6C52577349A007DC782 /* CbLiteViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304CF6DD257734B1007DC782 /* Build configuration list for PBXNativeTarget "CbLiteViewer" */;
+			buildPhases = (
+				304CF6C22577349A007DC782 /* Sources */,
+				304CF6C32577349A007DC782 /* Frameworks */,
+				304CF6C42577349A007DC782 /* Resources */,
+				304CF6E625773B29007DC782 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CbLiteViewer;
+			productName = CbLiteViewer;
+			productReference = 304CF6C62577349A007DC782 /* CbLiteViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304CF6BE25773499007DC782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					304CF6C52577349A007DC782 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 304CF6C125773499007DC782 /* Build configuration list for PBXProject "CbLiteViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304CF6BD25773499007DC782;
+			productRefGroup = 304CF6C72577349A007DC782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304CF6C52577349A007DC782 /* CbLiteViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304CF6C42577349A007DC782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A6DB8B2580963300871014 /* CBLiteDBController.xib in Resources */,
+				304CF6D3257734B0007DC782 /* Assets.xcassets in Resources */,
+				304CF6E825774A89007DC782 /* DBDoc.icns in Resources */,
+				30A6DB862580914500871014 /* MainMenu.xib in Resources */,
+				30803B4925A58ED60007676C /* image-not-available.png in Resources */,
+				30A7C4102598399C00E0EDC5 /* AddViewDateViewer.xib in Resources */,
+				30BB460825B6A61A000F7D36 /* CouchbaseLite.framework.dSYM in Resources */,
+				306C333A2592F82C008B3AB0 /* ImageFileViewer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304CF6C22577349A007DC782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304CF6D12577349A007DC782 /* Document.m in Sources */,
+				306C33392592F82C008B3AB0 /* ImageFileViewer.m in Sources */,
+				304CF6D9257734B1007DC782 /* main.m in Sources */,
+				30803B4725A586690007676C /* CBLBlob+copyZone.m in Sources */,
+				30A6DB8A2580963300871014 /* CBLiteDBController.m in Sources */,
+				30A7C40F2598399C00E0EDC5 /* AddViewDateViewer.m in Sources */,
+				304CF6CB2577349A007DC782 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		304CF6DB257734B1007DC782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		304CF6DC257734B1007DC782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		304CF6DE257734B1007DC782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CbLiteViewer/CbLiteViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 855U448AQC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CbLiteViewer",
+					"$(PROJECT_DIR)/CbLiteViewer/macOS",
+				);
+				INFOPLIST_FILE = CbLiteViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mike.Anderson.CbLiteViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		304CF6DF257734B1007DC782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CbLiteViewer/CbLiteViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 855U448AQC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CbLiteViewer",
+					"$(PROJECT_DIR)/CbLiteViewer/macOS",
+				);
+				INFOPLIST_FILE = CbLiteViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mike.Anderson.CbLiteViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304CF6C125773499007DC782 /* Build configuration list for PBXProject "CbLiteViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304CF6DB257734B1007DC782 /* Debug */,
+				304CF6DC257734B1007DC782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304CF6DD257734B1007DC782 /* Build configuration list for PBXNativeTarget "CbLiteViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304CF6DE257734B1007DC782 /* Debug */,
+				304CF6DF257734B1007DC782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304CF6BE25773499007DC782 /* Project object */;
+}

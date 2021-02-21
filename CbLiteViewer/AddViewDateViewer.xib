@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AddViewDateViewer">
+            <connections>
+                <outlet property="mCloseBtn" destination="xZ0-ur-uys" id="Qw1-bV-9be"/>
+                <outlet property="mDateTimePicker" destination="jvG-pS-epT" id="Eqd-SO-usP"/>
+                <outlet property="mSaveAsTimeStampBtn" destination="JRp-6B-U1P" id="0wT-1g-TNn"/>
+                <outlet property="mSaveBtn" destination="ihU-5t-e3k" id="6ql-Qc-pbh"/>
+                <outlet property="mTimestampLabel" destination="ToJ-lW-G6X" id="whY-Ta-hmh"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ihU-5t-e3k">
+                    <rect key="frame" x="18" y="13" width="70" height="32"/>
+                    <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SlR-xo-D66">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="saveBtnPressed:" target="-2" id="CrM-Dj-sXg"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-ur-uys">
+                    <rect key="frame" x="235" y="13" width="75" height="32"/>
+                    <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rDB-XH-RV1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeBtnPressed:" target="-2" id="AdF-bB-jJZ"/>
+                    </connections>
+                </button>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jvG-pS-epT">
+                    <rect key="frame" x="22" y="127" width="191" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="hJn-id-Unr"/>
+                    </constraints>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="LIf-sV-7ft">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="631165798.363855">
+                            <!--2021-01-01 03:49:58 +0000-->
+                        </date>
+                        <date key="minDate" timeIntervalSinceReferenceDate="-978307200">
+                            <!--1970-01-01 00:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
+                    </datePickerCell>
+                    <connections>
+                        <action selector="datePickerAction:" target="-2" id="vdb-Wr-Q7X"/>
+                    </connections>
+                </datePicker>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JRp-6B-U1P">
+                    <rect key="frame" x="20" y="59" width="152" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="148" id="l8l-j7-x6u"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Save as Timestamp" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NG9-Ln-UMW">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ToJ-lW-G6X">
+                    <rect key="frame" x="22" y="97" width="172" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="c89-4X-Tf9"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" allowsUndo="NO" title="Label" id="YZP-pa-yeS">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xZ0-ur-uys" secondAttribute="trailing" constant="20" symbolic="YES" id="0R2-x6-wal"/>
+                <constraint firstItem="ihU-5t-e3k" firstAttribute="baseline" secondItem="xZ0-ur-uys" secondAttribute="baseline" id="0c7-VF-ljr"/>
+                <constraint firstItem="ihU-5t-e3k" firstAttribute="top" secondItem="JRp-6B-U1P" secondAttribute="bottom" constant="20" symbolic="YES" id="CNv-wV-yzt"/>
+                <constraint firstItem="jvG-pS-epT" firstAttribute="leading" secondItem="JRp-6B-U1P" secondAttribute="leading" id="Pm9-gU-EMy"/>
+                <constraint firstItem="jvG-pS-epT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="R1p-z3-cdd"/>
+                <constraint firstAttribute="bottom" secondItem="ihU-5t-e3k" secondAttribute="bottom" constant="20" symbolic="YES" id="cTF-4D-ONo"/>
+                <constraint firstItem="ToJ-lW-G6X" firstAttribute="leading" secondItem="ihU-5t-e3k" secondAttribute="leading" id="hnx-gf-v3V"/>
+                <constraint firstItem="jvG-pS-epT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="22" id="j5v-oM-iyb"/>
+                <constraint firstItem="ToJ-lW-G6X" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="24" id="k07-92-oXi"/>
+                <constraint firstItem="ToJ-lW-G6X" firstAttribute="top" secondItem="jvG-pS-epT" secondAttribute="bottom" constant="14" id="zt8-9I-Jip"/>
+            </constraints>
+            <point key="canvasLocation" x="-255" y="69.5"/>
+        </customView>
+    </objects>
+</document>
